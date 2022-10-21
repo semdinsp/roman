@@ -1,0 +1,19 @@
+%section.container
+  %h1 Test Header 
+  %h2 Subtitle
+  .content
+    %div 
+      .input(type="text")
+      %button Personal Data
+      %button Employment
+
+    %div(id="app" data-controller="spa")
+      %button(data-action="click->spa#launchSpaDemo")
+        Launch Modal
+        %div(class="modal" data-spa-target="spa.modal")
+          %div(class="modal-dialog")
+            %div(class="modal-content")
+              This is a modal
+
+
+  
